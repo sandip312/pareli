@@ -11,7 +11,7 @@ app.use(express.json());
 mongoose.connect('mongodb://localhost:27017/pareliDB', { useNewUrlParser: true, useUnifiedTopology: true });
 const connection = mongoose.connection;
 connection.once('open', () => {
-  console.log('MongoDB database connection established successfully');
+  console.log('MongoDB database connection successfully');
 });
 
 const usersRouter = require('./routes/users');
