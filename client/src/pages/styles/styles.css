@@ -1,0 +1,49 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    /* padding-top: 0%; */
+    background-color: #52ddf6;
+  }
+  
+  .Header-buttons {
+    display: flex;
+    align-items: right;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  nav button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #56b8e8;
+    color: #fdfbfb;
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: #9f5fcf;
+  }
+  
+  .Body {
+    margin-top: 20px;
+    text-align: center;
+    /* background-color:rgb(235, 207, 190); */
+    /* background-image: url('../Image/login-bg.jpg'); */
+  }
+  .form  {
+    background-color: blue; 
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  

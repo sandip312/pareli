@@ -1,23 +1,16 @@
-const express = require('express');
-const cors = require('cors');
-const mongoose = require('mongoose');
+const express = require('express')
+const userRoute=require('./routes/users')
+const dbConnect = require('./db/dbconnect')
 
-const app = express();
-const port = process.env.PORT || 5000;
+const app = express()
+require('dotenv').config()
+ const port = process.env.PORT || 8848  //const port = 8848 
 
-app.use(cors());
-app.use(express.json());
-
-mongoose.connect('mongodb://localhost:27017/pareliDB', { useNewUrlParser: true, useUnifiedTopology: true });
-const connection = mongoose.connection;
-connection.once('open', () => {
-  console.log('MongoDB database connection successfully');
-});
-
-const usersRouter = require('./routes/users');
-
-app.use('/users', usersRouter);
-
+// Connect to MongoDB
+dbConnect()  
+app.use(express.json({limit:'50mb'}));
+// Route
+app.use("/user",userRoute)
 app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
-});
+  console.log(`Example app listening on port ${port}`)
+})

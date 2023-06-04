@@ -1,0 +1,56 @@
+
+
+
+
+form {
+    box-shadow: 0px 0px 10px rgba(53, 40, 40, 0.2);
+    background-color: #7ebfe2;
+    /* display: flex; */
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  /* 
+  label {
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="number"] {
+    width: 100px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  select {
+    width: 100%;
+  }
+   */
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #3d04f7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 1rem;
+  }
+  

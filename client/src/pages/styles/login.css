@@ -1,0 +1,50 @@
+
+.tittle {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  form {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color:rgba(29, 173, 183, 0.409)
+  }
+  
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #eabebe;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .btn-1 {
+    padding: 10px 20px;
+    background-color: #2514bd;
+    color: #dd7979;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-1:hover {
+    background-color: #3272c9;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .Login-register-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  a {
+    color: #007bff;
+  }
